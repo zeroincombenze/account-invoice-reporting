@@ -4,23 +4,26 @@ with open('VERSION.txt', 'r') as f:
     version = f.read().strip()
 
 setuptools.setup(
-    name="odoo14-addons-oca-account-invoice-reporting",
+    name="odoo12-addons-oca-account-invoice-reporting",
     description="Meta package for oca-account-invoice-reporting Odoo addons",
     version=version,
     install_requires=[
-        'odoo14-addon-account_comment_template',
-        'odoo14-addon-account_invoice_line_report',
-        'odoo14-addon-account_invoice_line_sale_line_position',
-        'odoo14-addon-account_invoice_production_lot',
-        'odoo14-addon-account_invoice_report_due_list',
-        'odoo14-addon-account_invoice_report_grouped_by_picking',
-        'odoo14-addon-account_invoice_report_grouped_by_picking_sale_mrp',
-        'odoo14-addon-account_invoice_report_hide_line',
-        'odoo14-addon-partner_time_to_pay',
+        'odoo12-addon-account_invoice_comment_template',
+        'odoo12-addon-account_invoice_line_report',
+        'odoo12-addon-account_invoice_production_lot',
+        'odoo12-addon-account_invoice_report_due_list',
+        'odoo12-addon-account_invoice_report_grouped_by_picking',
+        'odoo12-addon-account_invoice_report_grouped_by_picking_sale_mrp',
+        'odoo12-addon-account_invoice_report_hide_line',
+        'odoo12-addon-account_invoice_report_payment_info',
+        'odoo12-addon-account_reporting_net_weight',
+        'odoo12-addon-account_reporting_weight',
+        'odoo12-addon-base_comment_template',
+        'odoo12-addon-partner_time_to_pay',
     ],
     classifiers=[
         'Programming Language :: Python',
         'Framework :: Odoo',
-        'Framework :: Odoo :: 14.0',
+        'Framework :: Odoo :: 12.0',
     ]
 )

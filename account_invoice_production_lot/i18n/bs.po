@@ -42,13 +42,13 @@ msgid ""
 msgstr ""
 
 #. module: account_invoice_production_lot
-#: model:ir.model,name:account_invoice_production_lot.model_account_move_line
-msgid "Journal Item"
-msgstr ""
+#: model:ir.model,name:account_invoice_production_lot.model_account_invoice_line
+msgid "Invoice Line"
+msgstr "Stavka fakture"
 
 #. module: account_invoice_production_lot
-#: model:ir.model.fields,field_description:account_invoice_production_lot.field_account_move_line__prod_lot_ids
-#: model_terms:ir.ui.view,arch_db:account_invoice_production_lot.view_move_form
+#: model:ir.model.fields,field_description:account_invoice_production_lot.field_account_invoice_line__prod_lot_ids
+#: model_terms:ir.ui.view,arch_db:account_invoice_production_lot.view_invoice_line_form_prod_lots
 msgid "Production Lots"
 msgstr ""
 
@@ -60,8 +60,11 @@ msgstr ""
 #. module: account_invoice_production_lot
 #: model:product.product,uom_name:account_invoice_production_lot.product_icecream_b
 #: model:product.template,uom_name:account_invoice_production_lot.product_icecream_b_product_template
-msgid "Units"
+msgid "Unit(s)"
 msgstr ""
 
-#~ msgid "Invoice Line"
-#~ msgstr "Stavka fakture"
+#. module: account_invoice_production_lot
+#: model:product.product,weight_uom_name:account_invoice_production_lot.product_icecream_b
+#: model:product.template,weight_uom_name:account_invoice_production_lot.product_icecream_b_product_template
+msgid "kg"
+msgstr ""
